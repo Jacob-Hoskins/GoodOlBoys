@@ -5,6 +5,7 @@
 }
 
 /* HEADER */
+
 header img {
   height: 15vw;
   width: 15vw;
@@ -45,17 +46,44 @@ header img {
   height: 45vh;
 }
 
+/* MAIN PAGE CONTENT */
+.selling-points-title {
+  text-align: center;
+  background-color: #5cdb95;
+}
+
 .selling-points {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
   margin: auto;
   text-align: center;
   margin-bottom: 10vw;
+  background-color: #8ee4af;
 }
+
+/* f3f3f3 */
 
 .points {
   text-align: center;
-  border: solid black 2px;
-  padding: 5px;
+  /* border: solid black 2px; */
+  padding: 5vw;
   margin: auto;
   margin-bottom: 25px;
   width: 25vw;
+}
+
+.left-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.right-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  font-size: 20px;
 }
