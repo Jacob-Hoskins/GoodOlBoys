@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Good 'ol Boys</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <img src="img/testFinal.png" alt="Good Ol Boys Logo" class="img_logo" />
+    </header>
+    <main>
+      <div class="container">
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <p>Painting</p>
+              <img
+                src="https://www.imageworkspainting.com/hubfs/stock-01.jpg"
+                alt="Painting"
+                class="img-slider"
+              />
+            </div>
+            <div class="swiper-slide">
+              <p>Plumbing</p>
+              <img
+                src="https://media.istockphoto.com/id/1350073194/photo/water-pipes.jpg?b=1&s=170667a&w=0&k=20&c=r0aA_QI9Xcmlc92IG38PepW-AzN4vay3BKZMp64xRV4="
+                alt="Plumbing"
+                class="img-slider"
+              />
+            </div>
+            <div class="swiper-slide">
+              <p>Flooring</p>
+              <img
+                src="https://www.rocketmortgage.com/resources-cmsassets/RocketMortgage.com/Article_Images/Large_Images/Stock-Wood-Floors-AdobeStock-119846388%20-%20Copy-2.jpeg"
+                alt="flooring image"
+                class="img-slider"
+              />
+            </div>
+            <div class="swiper-slide">
+              <p>Electrical</p>
+              <img
+                src="https://media.istockphoto.com/id/1170936803/photo/electrical-circuit-breaker-panel-in-new-home-under-construction.jpg?s=612x612&w=0&k=20&c=1swY3ZjUVlaMtIFVSTv5QK1DXYoNB7fbjbYNgAF65p8="
+                alt="electrical picture"
+                class="img-slider"
+              />
+            </div>
+            <div class="swiper-slide">
+              <p>Framing</p>
+              <img
+                src="https://www.housecraftersofwny.com/wp-content/uploads/2015/02/builder-3.jpg"
+                alt="framing picture"
+                class="img-slider"
+              />
+            </div>
+            ...
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        // Optional parameters
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>
